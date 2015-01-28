@@ -1,0 +1,20 @@
+<!-- Your site -->
+<div class="container outer">
+    <h1 class="text-center">Welcome to ViewSportz</h1>
+    <h4 class="text-center">Click on your favorite team logo to view in action</h4>
+    <div class="btn-group btn-group-justified">
+        <a href="javascript:void(0)" class="btn btn-warning active">All Sports</a>
+        <a href="javascript:void(0)" class="btn btn-warning">NHL</a>
+        <a href="javascript:void(0)" class="btn btn-warning">MLS</a>
+        <a href="javascript:void(0)" class="btn btn-warning">NFL</a>
+        <a href="javascript:void(0)" class="btn btn-warning">MLB</a>
+        <a href="javascript:void(0)" class="btn btn-warning">NBA</a>
+    </div>
+    <p class="bs-component">
+        <ul class="stage">
+            <li class="teamItem" ng-repeat="team in teams"><a href="#/team/{{team.hashTag}}"><img src="{{team.imgUrl}}" alt=""/>{{team.teamName}}</a></li>
+        </ul>
+    </p>
+</div>
+
+<!-- Your site ends -->
